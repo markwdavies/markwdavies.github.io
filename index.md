@@ -5,6 +5,17 @@ layout: default
 # {{ page.title }}
 
 <img src="images/mwd.jpg" class="img-responsive rounded-circle" alt="in the Pub" >
-<h3>Site to complement my <a href="https://github.com/markwdavies">GitHub Code Repos</a></h3>
-<p>See also my <a href="https://markwdavies.azurewebsites.net">Azure Web App</a></p>
-<p>and other <a href="https://markwdavies.co.uk/">website</a></p>
+<div class="row">
+<div class="col-sm-4">
+<h3>Site to complement my ...</h3>
+<p><a href="https://github.com/markwdavies" class="btn btn-secondary btn-sm"> GitHub Code Repos &raquo;</a></p>
+</div>
+<div class="col-sm-4">
+<p>See also my ... </p>
+<p><a href="https://markwdavies.azurewebsites.net" class="btn btn-secondary btn-sm">Azure Web App &raquo;</a></p>
+</div>
+<div class="col-sm-4">
+<p>and other ...</p>
+<p><a href="https://markwdavies.co.uk/" class="btn btn-secondary btn-sm"> website &raquo;</a></p>
+</div>
+</div>
