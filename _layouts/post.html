@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="card">
+  <div class="card-header">
+    {{ page.date | date: "%-d %B %Y" }} by {{ page.author | default: site.author }}
+  </div>
+  <div class="card-body">
+    {{content}}
+  </div>
+  <div class="card-footer text-body-secondary">
+    {% if page.tags %}
+      <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+    {% endif %}
+  </div>
+</div>

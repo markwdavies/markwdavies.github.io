@@ -7,7 +7,7 @@ layout: default
 <img src="images/mwd.jpg" class="img-responsive rounded-circle" alt="in the Pub" >
 <div class="row">
 <div class="col-sm-4">
-<h3>Site to complement my ...</h3>
+<p>Site to complement my ...</p>
 <p><a href="https://github.com/markwdavies" class="btn btn-secondary btn-sm"> GitHub Code Repos &raquo;</a></p>
 </div>
 <div class="col-sm-4">

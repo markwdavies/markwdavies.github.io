@@ -1,6 +1,7 @@
 ---
 title: Amendment to WhatWasRestored SQL Proc
-layout: default
+layout: post
+tags: news sql
 ---
 
 # {{ page.title }}

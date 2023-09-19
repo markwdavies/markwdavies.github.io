@@ -1,6 +1,8 @@
 ---
 title: Initial Blog Post
-layout: default
+layout: post
+tags: news misc
+author: mwd
 ---
 
 # {{ page.title }}
