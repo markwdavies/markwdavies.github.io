@@ -1,17 +1,27 @@
 ---
 layout: default
 ---
-
-<div class="card">
-  <div class="card-header">
-    {{ page.date | date: "%-d %B %Y" }} by {{ page.author | default: site.author }}
+<div class="row">
+<div class="col-sm-2">&nbsp;</div>
+<div class="col-sm-8">
+  <div class="card text-bg-info m-3 p-3">
+    <div class="card-header">
+      {{ page.date | date: "%-d %B %Y" }} by {{ page.author | default: site.author }}
+    </div>
+    <div class="card-body">
+      {{content}}
+    </div>
+    <div class="card-footer text-body-secondary">
+      {% if page.tags %}
+        <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+      {% endif %}
+    </div>
   </div>
-  <div class="card-body">
-    {{content}}
-  </div>
-  <div class="card-footer text-body-secondary">
-    {% if page.tags %}
-      <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-    {% endif %}
-  </div>
+</div>
+<div class="col-sm-2">&nbsp;</div>
+</div>
+<div class="text-body-secondary">
+  <p>
+    <a href="{% link blog.md %}"> Back to News Index </a>
+  </p>
 </div>

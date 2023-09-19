@@ -5,9 +5,9 @@ layout: default
 {{ content }}
 
 <div class="row">
-<div class="col-sm-1"></div>
+<div class="col-sm-1">&nbsp;</div>
 <div class="col-sm-5">
-  <div class="card m-3 p-3">
+  <div class="card text-bg-primary m-3 p-3">
     <div class="card-header">All Posts</div>
     <table class="table table-primary table-striped">
     <thead><th scope="col">Date</th><th scope="col">Title</th></thead>
@@ -23,7 +23,7 @@ layout: default
 </div>
 <div class="col-sm-5">
     {% for tag in site.tags %}
-    <div class="card m-3 p-3">
+    <div class="card text-bg-secondary m-3 p-3">
     <div class="card-header">Posts Tagged with : {{ tag[0] }}</div>
     <table class="table table-primary table-striped">
         {% for post in tag[1] %}
@@ -32,6 +32,6 @@ layout: default
       </table>
     </div>
    {% endfor %}
-   <div class="col-sm-1"></div>
+   <div class="col-sm-1">&nbsp;</div>
 </div>
 </div>
