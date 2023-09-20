@@ -1,6 +1,6 @@
 ---
 title: About This Site
-layout: default
+layout: info
 ---
 # {{ page.title }}
 
