@@ -1,6 +1,6 @@
 ---
 title: News Posts
-layout: home
+layout: news
 ---
 
 # {{ page.title }}
