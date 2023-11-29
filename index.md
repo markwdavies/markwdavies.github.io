@@ -16,6 +16,6 @@ a class="nav-link active" aria-current="page"  href="{% post_url 2023-09-19-DBAR
 </div>
 <div class="col-sm-4">
 <p>and for details of my ...</p>
-<p><a href="{% post_url 2023-11-28-repoContents %}" class="btn btn-secondary btn-sm"> Stored Procs repo &raquo;</a></p>
+<p><a href="{% post_url 2023-11-28-RepoContents %}" class="btn btn-secondary btn-sm"> Stored Procs repo &raquo;</a></p>
 </div>
 </div>
