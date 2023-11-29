@@ -18,27 +18,32 @@ The __RemoveStoredProcs.sql__ script will remove from the Master database any st
 * __WhatIsRunning.sql__ 
     * Display details of running sessions. 
     * Usage : `EXEC sp_WhatIsRunning`
+
 ***
 * __WhatWasBackedUp.sql__
     * Display details of latest Database Backups for each DB on current instance. 
     * Use optional `@DBName` parameter to narrow down results to a specific DB or a subset using wildcards.
     * Use optional `@FullBackupsOnly` parameter with a value of 1 to restrict results to Full Backups.
     * Usage : `EXEC sp_WhatWasBackedUp @DBName = 'MyDB' , @FullBackupsOnly = 1`
+
 ***
 * __WhatWasRestored.sql__
     * Display the latest DB restores including details of the source backup file.
     * Use optional `@DBName` parameter to narrow down results to specific DB or a subset using wildcards.
     * Use optional `@FullBackupsOnly` parameter with a value of 1 to restrict results to Full Backups.
     * Usage : `EXEC sp_WhatWasRestored @DBName = 'MyDB' , @FullBackupsOnly = 1`
+
 ***
 * __WhereAreTheBackups.sql__ 
     * Display the location and size of Database backup files for backups taken on the current instance.
     * Use optional `@DBName` parameter to narrow down results to specific DB or a subset using wildcards.
     * Use optional `@FullBackupsOnly` parameter with a value of 1 to restrict results to Full Backups.
     * Usage : `EXEC sp_WhereAreTheBackups @DBName = 'MyDB' , @FullBackupsOnly = 1`
+
 ***
 * __WhereAreTheFiles.sql__ 
     * Display the location and size of Database Data and Log Files.
     * Use optional `@DBName` parameter to narrow down results to specific DB or a subset using wildcards.
     * Usage : `EXEC sp_WhereAreTheFiles @DBName = 'MyDB'`
+    
 ***
