@@ -12,7 +12,7 @@ The [Stored Procs github repo](https://github.com/markwdavies/SQLServerUtilities
 
 Each script, by default, creates the Stored Procedure in the Master database from where it can be run, each script will replace a like named Stored proc if one has already been created.
 
-The __RemoveStoredProcs.sql__ script will remove from the Master database any stored procs created with the same names as those in the repository. This is only needed if tidying up the master DB.
+The __RemoveStoredProcs.sql__ script will remove from the Master database any stored procs created with the same names as those in this repository. This is only needed if tidying up the master DB.
 
 ***
 * __WhatIsRunning.sql__ 

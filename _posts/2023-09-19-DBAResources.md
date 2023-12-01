@@ -29,9 +29,10 @@ Additionally there are numerous websites out there offering advice and scripts t
 ***
 * [Glenn Barry's SQL Performance Script](https://glennsqlperformance.com/resources/)
     * A number of diagnostic queries to dig deep into your DB Server's configuration and Performance.
-***
 
+***
 * [SQL Undercover](https://sqlundercover.com/free-tools/) 
     * sp_RestoreScript is a very handy resource to generate DB restore commands.
     * many other scripts in a github repository - see also the blog posts.
+    
 ***
