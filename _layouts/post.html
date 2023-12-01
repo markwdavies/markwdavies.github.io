@@ -8,10 +8,10 @@ layout: default
     <div class="card-header">
       {{ page.date | date: "%-d %B %Y" }} by {{ page.author | default: site.author }}
     </div>
-    <div class="card-body">
+    <div class="card-body text-start">
       {{content}}
     </div>
-    <div class="card-footer text-body-secondary text-start">
+    <div class="card-footer text-body-secondary">
       {% if page.tags %}
         <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
       {% endif %}
