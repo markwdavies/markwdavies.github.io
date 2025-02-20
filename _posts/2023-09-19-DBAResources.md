@@ -4,13 +4,12 @@ layout: post
 tags: sql
 author: mwd
 ---
-
 # {{ page.title }}
-## For SQL Server
+## Useful resources For SQL Server DBAs
 
-There are a few scripts to be found in my [github repo](https://github.com/markwdavies/SQLServerUtilities) that I use daily to help locate useful information on a SQL Server Database Server.
+There are a few scripts to be found in my <a href="https://github.com/markwdavies/SQLServerUtilities/"  class="btn btn-github"><span class="icon"></span>github repository</a>. The stored procs can help locate useful information on a SQL Server Database Server.
 
-Additionally there are numerous websites out there offering advice and scripts to the SQL Server DBA, of the many downloadable resources available these are some that I have found to be useful ...
+Additionally there are numerous websites out there offering advice and scripts to the SQL Server DBA. Some that I have found to be useful are listed below :
 
 ***
 * [Who Is Active](https://github.com/amachanic/sp_whoisactive)

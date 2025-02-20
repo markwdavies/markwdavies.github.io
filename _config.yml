@@ -1,3 +1,14 @@
 title: markwdavies
 author: markwdavies
-url: https://code.markwdavies.co.uk
+email: webmail@markwdavies.co.uk
+description: >- 
+  companion site to my github repo
+baseurl: "" 
+url: "https:/code.markwdavies.co.uk"
+github_username:  markwdavies
+repository: markwdavies/markwdavies.github.io
+show_downloads: false
+# Build settings
+theme: jekyll-theme-hacker
+plugins:
+  - jekyll-feed

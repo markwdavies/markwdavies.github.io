@@ -1,32 +1,22 @@
 ---
 layout: default
 ---
-
-{{ content }}
-
-<div class="row">
-<div class="col-sm-1">&nbsp;</div>
-<div class="col-sm-5">
-  <div class="card text-bg-primary m-3 p-3">
-    <div class="card-header">All Posts</div>
-    <table class="table table-primary table-striped text-start">
+  <div class="container">
+    <h2>All Posts</h2>
+    <table>
     {% tablerow post in site.posts cols:1 %} 
       {{ post.date | date: "%-d %b %Y" }} <a href="{{ post.url }}">{{ post.title }}</a>
     {% endtablerow %}
     </table>
   </div>
-</div>
-<div class="col-sm-5">
+
+<div class="container">
     {% for tag in site.tags %}
-    <div class="card text-bg-secondary m-3 p-3">
-    <div class="card-header">Posts Tagged with : {{ tag[0] }}</div>
-    <table class="table table-primary table-striped text-start">
+    <hr><h2>Posts Tagged with : {{ tag[0] }}</h2>
+    <table>
         {% tablerow post in tag[1] cols:1 %}
           <a href="{{ post.url }}">{{ post.title }}</a>
         {% endtablerow %}
       </table>
-    </div>
    {% endfor %}
-   <div class="col-sm-1">&nbsp;</div>
-</div>
 </div>

@@ -2,19 +2,19 @@
 title: Home Page
 layout: default
 ---
-# {{ page.title }}
 
-<img src="images/mwd.jpg" class="img-responsive rounded-circle" alt="in the Pub" >
-<div class="row">
-<div class="col-sm-4">
-<p>&nbsp;</p>
+# {{ page.title }}
+This site has been set up as a github hosted site to document my <a href="https://github.com/markwdavies" class="btn btn-github"><span class="icon"></span>code repos on github</a> and maybe some other stuff as well.
+Currently a work in progress ...
+<div>
+<p>Details of my <a href="{% post_url 2023-11-28-RepoContents %}" class="btn">Stored Procs repository</a></p>
 </div>
-<div class="col-sm-4">
-<p>Links to useful ... </p>
-<p><a href="{% post_url 2023-09-19-DBAResources %}" class="btn btn-secondary btn-sm">SQL Server websites &raquo;</a></p>
-</div>
-<div class="col-sm-4">
-<p>and for details of my ...</p>
-<p><a href="{% post_url 2023-11-28-RepoContents %}" class="btn btn-secondary btn-sm">Stored Procs repo &raquo;</a></p>
-</div>
+
+<p><h2>All Posts</h2></p>
+<div>
+    <table class="table table-primary table-striped text-start">
+    {% tablerow post in site.posts cols:1 %} 
+      {{ post.date | date: "%-d %b %Y" }} <a href="{{ post.url }}">{{ post.title }}</a>
+    {% endtablerow %}
+    </table>
 </div>

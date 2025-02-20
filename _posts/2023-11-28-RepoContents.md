@@ -4,13 +4,12 @@ layout: post
 tags: sql
 author: mwd
 ---
-
 # {{ page.title }}
-## in my GitHub repo 
+## Stored procedures in my GitHub repository
 
-The [Stored Procs github repo](https://github.com/markwdavies/SQLServerUtilities/tree/main/StoredProcs) currently contains the following scripts.
+The <a href="https://github.com/markwdavies/SQLServerUtilities/tree/main/StoredProcs"  class="btn btn-github"><span class="icon"></span>Stored Procs github repository</a> currently contains the following scripts.
 
-Each script, by default, creates the Stored Procedure in the Master database from where it can be run, each script will replace a like named Stored proc if one has already been created.
+Each script, by default, creates a Stored Procedure in the Master database from where it can be run, each script will replace a like named Stored proc if one has already been created.
 
 The __RemoveStoredProcs.sql__ script will remove from the Master database any stored procs created with the same names as those in this repository. This is only needed if tidying up the master DB.
 
