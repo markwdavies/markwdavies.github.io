@@ -26,3 +26,5 @@ I also cross referenced to [Jekyll documentation](https://jekyllrb.com/docs/) fo
 Once all set up , I pulled the existing site from Github. Then applied the new Theme as per [Github Pages instructions](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll) then rebuilt the site locally to test on my Debian VM.
 
 There was some re-editing required of the templates and posts but once complete, I committed the changes locally in git and pushed it back to Github where it was automatically rebuilt and deployed in its new format.
+
+- - -
