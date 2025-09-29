@@ -2,21 +2,23 @@
 layout: default
 ---
   <div class="container">
-    <h2>All Posts</h2>
-    <table>
-    {% tablerow post in site.posts cols:1 %} 
-      {{ post.date | date: "%-d %b %Y" }} <a href="{{ post.url }}">{{ post.title }}</a>
-    {% endtablerow %}
-    </table>
-  </div>
+    <div class="col-6">
+      <h2>All Posts</h2>
+      <table>
+      {% tablerow post in site.posts cols:1 %} 
+        {{ post.date | date: "%-d %b %Y" }} <a href="{{ post.url }}">{{ post.title }}</a>
+      {% endtablerow %}
+      </table>
+    </div>
 
-<div class="container">
-    {% for tag in site.tags %}
-    <hr><h2>Posts Tagged with : {{ tag[0] }}</h2>
-    <table>
-        {% tablerow post in tag[1] cols:1 %}
-          <a href="{{ post.url }}">{{ post.title }}</a>
+    <div class="col-6">
+      {% for tag in site.tags %}
+      <h2>Latest Posts Tagged with : {{ tag[0] }}</h2>
+      <table>
+        {% tablerow post in tag[1] cols:1 limit:5 %}
+        <a href="{{ post.url }}">{{ post.title }}</a>
         {% endtablerow %}
       </table>
-   {% endfor %}
+      {% endfor %}
+   </div>
 </div>
